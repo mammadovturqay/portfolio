@@ -3,40 +3,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Turqay Məmmədov | Portfolio</title>
+    <title>Turgay Mammadov | Software Engineer & Credit Analyst</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #0d1117; color: #c9d1d9; line-height: 1.6; margin: 0; padding: 20px; }
-        .container { max-width: 800px; margin: auto; background: #161b22; padding: 30px; border-radius: 10px; border: 1px solid #30363d; }
-        h1 { color: #58a6ff; border-bottom: 2px solid #30363d; padding-bottom: 10px; }
-        h2 { color: #d2a8ff; }
-        .project-card { background: #0d1117; border: 1px solid #30363d; padding: 15px; margin: 15px 0; border-radius: 6px; }
-        .tech-stack { font-size: 0.85em; color: #8b949e; font-style: italic; }
-        a { color: #58a6ff; text-decoration: none; }
+        :root {
+            --bg: #0d1117;
+            --card-bg: #161b22;
+            --accent: #58a6ff;
+            --text-main: #c9d1d9;
+            --text-bright: #ffffff;
+            --border: #30363d;
+            --highlight: #f2cc60;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(rgba(13, 17, 23, 0.9), rgba(13, 17, 23, 0.9)), url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1000&q=80');
+            background-size: cover;
+            height: 40vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 2px solid var(--border);
+            text-align: center;
+        }
+
+        .hero-name { font-size: 3rem; color: var(--text-bright); margin: 0; letter-spacing: -1px; }
+        .hero-title { font-size: 1.2rem; color: var(--accent); font-weight: 400; }
+
+        .container { max-width: 1000px; margin: -50px auto 50px; padding: 0 20px; }
+
+        .main-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: var(--text-bright);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 10px;
+            margin: 40px 0 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .experience-box {
+            background: rgba(88, 166, 255, 0.05);
+            border-left: 4px solid var(--accent);
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+
+        .project-card {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            padding: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .project-card:hover { border-color: var(--accent); transform: translateY(-5px); }
+
+        .tech-tag {
+            display: inline-block;
+            background: #21262d;
+            border: 1px solid var(--border);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: var(--accent);
+            margin: 5px 5px 0 0;
+        }
+
+        .security-badge {
+            color: var(--highlight);
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .contact-links a { color: var(--accent); text-decoration: none; margin: 0 10px; font-weight: 500; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Turqay Mammadov</h1>
-        <p><strong>Software Developer | Bank Mütəxəssisi</strong></p>
-        <p>Step IT Academy məzunuyam və hazırda bank sektorunda çalışıram. Problemlərin texniki həllinə fokuslanıram.</p>
 
-        <h2>🚀 Seçilmiş Layihələrim</h2>
-        
-        <div class="project-card">
-            <h3>Design Patterns Testing</h3>
-            <p>C# dilində Adapter, Facade və Proxy kimi patternlərin tətbiqi.</p>
-            <p class="tech-stack">Texnologiyalar: C#, .NET Core, SOLID</p>
+<header>
+    <h1 class="hero-name">TURGAY MAMMADOV</h1>
+    <div class="hero-title">Software Developer & Credit Systems Analyst</div>
+</header>
+
+<div class="container">
+    <div class="main-card">
+        <div class="contact-links" style="text-align: center; margin-bottom: 30px;">
+            <a href="mailto:turqaymammadovt@gmail.com">Email</a> | 
+            <a href="https://linkedin.com/in/turqay-manımadov">LinkedIn</a> | 
+            <a href="https://github.com/mammadovturqay">GitHub</a>
         </div>
 
-        <div class="project-card">
-            <h3>React Tasks</h3>
-            <p>Modern frontend texnologiyaları ilə hazırlanmış müxtəlif tapşırıqlar.</p>
-            <p class="tech-stack">Texnologiyalar: React, TypeScript, JavaScript</p>
+        <h2 class="section-title">💼 Peşəkar Təcrübə</h2>
+        <div class="experience-box">
+            <h3 style="margin-top:0;">Problemli Kreditlər üzrə Kiçik Mütəxəssis</h3>
+            <p style="color: var(--accent);">BOKT (Bank Olmayan Kredit Təşkilatı)</p>
+            <p>Mən gündəlik olaraq kredit portfellərinin analizi və ödəniş gecikmələri ilə işləyirəm. Bu təcrübə mənə maliyyə sistemlərinin, faiz hesablamalarının və müştəri databazalarının daxildən necə işlədiyini öyrədib. </p>
+            <div class="security-badge">
+                ⚠️ Sistem Analizi: BOKT proqram təminatının administrativ panelində boşluq aşkar edərək mühəndis yanaşmamı sübut etmişəm.
+            </div>
         </div>
 
-        <h2>📫 Əlaqə</h2>
-        <p>Email: turqaymammadovt@gmail.com</p>
-        <p><a href="https://www.linkedin.com/in/turqay-mammadov-ba087425a/">LinkedIn Profilim</a></p>
+        <h2 class="section-title">🛠️ Texniki Bacarıqlar (Stack)</h2>
+        <div class="grid">
+            <div class="project-card">
+                <h4>Backend & Core</h4>
+                <p>C# və Python dilləri ilə biznes məntiqlərinin qurulması.</p>
+                <div class="tech-list">
+                    <span class="tech-tag">C# (.NET Core)</span>
+                    <span class="tech-tag">Python (Tkinter)</span>
+                    <span class="tech-tag">SQL (PL/SQL)</span>
+                </div>
+            </div>
+            <div class="project-card">
+                <h4>Software Architecture</h4>
+                <p>Mürəkkəb kod bazalarını idarə etmək üçün dizayn patternləri.</p>
+                <div class="tech-list">
+                    <span class="tech-tag">Adapter</span>
+                    <span class="tech-tag">Facade</span>
+                    <span class="tech-tag">Proxy</span>
+                    <span class="tech-tag">SOLID</span>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="section-title">📂 GitHub-dan Seçilmişlər</h2>
+        <div class="grid">
+            <div class="project-card">
+                <h4>Design Patterns Framework</h4>
+                <p>Kodun təmizliyi və arxitekturası üzrə professional yanaşma nümunələri.</p>
+            </div>
+            <div class="project-card">
+                <h4>Product Management System</h4>
+                <p>ASP.NET Core MVC mühitində qurulmuş idarəetmə sistemi.</p>
+            </div>
+        </div>
+
+        <h2 class="section-title">🎓 Təhsil</h2>
+        <p><strong>Step IT Academy:</strong> Software Development Professional (2022-2025)</p>
+        <p><strong>ASAPES:</strong> Cüdo üzrə Bakalavr (İntizam və Məsuliyyət mənşəyi)</p>
     </div>
+</div>
+
 </body>
 </html>
